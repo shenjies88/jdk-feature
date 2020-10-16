@@ -1,4 +1,5 @@
 rootProject.name = 'jdk-feature'
 include 'app-module'
 include 'logging-module'
+include 'slf4j-module'
 

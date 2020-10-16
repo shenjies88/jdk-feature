@@ -6,11 +6,28 @@
 ### JDK9
 
 - [Jshell详解](https://www.cnblogs.com/IcanFixIt/p/7199108.html)
+
 - [模块化详解](https://www.baeldung.com/java-9-modularity)
+
+  - ```shell
+    javac --module-path mods -d mods/com.logging.module logging-module/src/main/java/module-info.java logging-module/src/main/java/com/logging/module/*.java
+    
+    javac --module-path mods -d mods/com.app.module app-module/src/main/java/module-info.java app-module/src/main/java/com/app/module/*.java
+    
+    java --module-path mods -m com.app.module/com.app.module.MainApp
+    
+    ```
+
+    
+
 - 集合
+
 - Stream
+
 - Optional
+
 - 进程 API
+
 - [平台日志详解](https://www.baeldung.com/java-9-logging-api)
 
 ### JDK10
