@@ -26,23 +26,15 @@ public class Slf4jLogger implements System.Logger {
 
     @Override
     public boolean isLoggable(Level level) {
-        switch (level) {
-            case OFF:
-                return false;
-            case TRACE:
-                return logger.isTraceEnabled();
-            case DEBUG:
-                return logger.isDebugEnabled();
-            case INFO:
-                return logger.isInfoEnabled();
-            case WARNING:
-                return logger.isWarnEnabled();
-            case ERROR:
-                return logger.isErrorEnabled();
-            case ALL:
-            default:
-                return true;
-        }
+        return switch (level) {
+            case OFF -> false;
+            case TRACE -> logger.isTraceEnabled();
+            case DEBUG -> logger.isDebugEnabled();
+            case INFO -> logger.isInfoEnabled();
+            case WARNING -> logger.isWarnEnabled();
+            case ERROR -> logger.isErrorEnabled();
+            default -> true;
+        };
     }
 
     @Override
@@ -52,21 +44,11 @@ public class Slf4jLogger implements System.Logger {
         }
 
         switch (level) {
-            case TRACE:
-                logger.trace(msg, thrown);
-                break;
-            case DEBUG:
-                logger.debug(msg, thrown);
-                break;
-            case WARNING:
-                logger.warn(msg, thrown);
-                break;
-            case ERROR:
-                logger.error(msg, thrown);
-                break;
-            case ALL:
-            default:
-                logger.info(msg, thrown);
+            case TRACE -> logger.trace(msg, thrown);
+            case DEBUG -> logger.debug(msg, thrown);
+            case WARNING -> logger.warn(msg, thrown);
+            case ERROR -> logger.error(msg, thrown);
+            default -> logger.info(msg, thrown);
         }
     }
 
@@ -78,21 +60,11 @@ public class Slf4jLogger implements System.Logger {
         String message = MessageFormat.format(format, params);
 
         switch (level) {
-            case TRACE:
-                logger.trace(message);
-                break;
-            case DEBUG:
-                logger.debug(message);
-                break;
-            case WARNING:
-                logger.warn(message);
-                break;
-            case ERROR:
-                logger.error(message);
-                break;
-            case ALL:
-            default:
-                logger.info(message);
+            case TRACE -> logger.trace(message);
+            case DEBUG -> logger.debug(message);
+            case WARNING -> logger.warn(message);
+            case ERROR -> logger.error(message);
+            default -> logger.info(message);
         }
     }
 }
