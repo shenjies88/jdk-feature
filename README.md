@@ -6,10 +6,12 @@
 ### JDK9
 
 - [Jshell详解](https://www.cnblogs.com/IcanFixIt/p/7199108.html)
-- 模块化
+- [模块化详解](https://www.baeldung.com/java-9-modularity)
 - 集合
 - Stream
 - Optional
+- 进程 API
+- [平台日志详解](https://www.baeldung.com/java-9-logging-api)
 
 ### JDK10
 
