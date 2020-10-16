@@ -1,3 +1,2 @@
 module com.app.module {
-
 }

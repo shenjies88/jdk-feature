@@ -7,11 +7,6 @@ version ''
 sourceCompatibility = '15'
 targetCompatibility = '15'
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
-
-
 subprojects {
 
     apply plugin: 'java'
@@ -25,5 +20,12 @@ subprojects {
         set('logbackVersion','1.2.3')
     }
 
-
+    dependencies {
+        //SLF4J
+        implementation "org.slf4j:slf4j-api:${slf4jVersion}"
+        implementation "org.slf4j:slf4j-simple:${slf4jVersion}"
+        //Logback
+        implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+        implementation "ch.qos.logback:logback-core:${logbackVersion}"
+    }
 }
