@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+group 'com.shenjies88.practice'
+version ''
+sourceCompatibility = '15'
+targetCompatibility = '15'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
