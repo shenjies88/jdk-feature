@@ -1,5 +1,8 @@
 ## JDK特性
 
+### 环境
+- `JDK15`
+- `Gradle6.3`
 ### JDK9
 
 - [Jshell详解](https://www.cnblogs.com/IcanFixIt/p/7199108.html)
