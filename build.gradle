@@ -7,6 +7,10 @@ version ''
 sourceCompatibility = '15'
 targetCompatibility = '15'
 
+java {
+    modularity.inferModulePath = true
+}
+
 subprojects {
 
     apply plugin: 'java'
@@ -14,6 +18,10 @@ subprojects {
     version ''
     sourceCompatibility = '15'
     targetCompatibility = '15'
+
+    java {
+        modularity.inferModulePath = true
+    }
 
     ext {
         set('slf4jVersion','2.0.0-alpha1')
