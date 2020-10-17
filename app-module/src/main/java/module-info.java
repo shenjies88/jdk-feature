@@ -1,4 +1,4 @@
 module com.app.module {
-//    requires com.logging.module;
-    requires com.slf4j.module;
+    requires static com.slf4j.module;
+//    requires static com.logging.module;
 }
