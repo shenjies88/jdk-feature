@@ -3,19 +3,15 @@
 ### 环境
 - `JDK15`
 - `Gradle6.7`
+
+### 提示
+- Gradle执行乱码问题`vmoptions`文件加上`-Dfile.encoding=utf-8`
+
 ### JDK9
 
 - [Jshell详解](https://www.cnblogs.com/IcanFixIt/p/7199108.html)
 
 - [模块化详解](https://www.baeldung.com/java-9-modularity)
-
-- 集合
-
-- Stream
-
-- Optional
-
-- 进程 API
 
 - [平台日志详解](https://www.baeldung.com/java-9-logging-api)
     
@@ -34,6 +30,16 @@
         javac --module-path mods -d mods/com.slf4j.module slf4j-module/src/main/java/module-info.java slf4j-module/src/main/java/com/slf4j/module/*.java
         #运行
         java --module-path mods -Dlogback.configurationFile=mods/logback.xml -m com.app.module/com.app.module.MainApp
+    
+    - 集合
+    
+    - Stream
+    
+    - Optional
+    
+    - 进程 API
+    
+    - 反应式流 (Reactive Streams)
         
 
 ### JDK10
