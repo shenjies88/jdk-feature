@@ -51,11 +51,17 @@
 ### JDK10
 
 - `var关键字`类型推断
+  - 带有初始化的局部变量
+  - 增强`for循环`
+  - 普通`for循环变量`
 - `Java`进程类共享
 - `G1`并行收集
 
 ### JDK11
 
+- `var关键字`可应用于`lambda表达式`
+- [HttpClient API](https://juejin.im/post/6844903685563088903#heading-8)
+- `ZGC`毫秒级暂停`GC`
 ### JDK12
 
 ### JDK13
