@@ -1,10 +1,12 @@
 ## JDK特性
 
 ### 环境
+
 - `JDK15`
 - `Gradle6.7`
 
 ### 提示
+
 - Gradle执行乱码问题`vmoptions`文件加上`-Dfile.encoding=utf-8`
 
 ### JDK9
@@ -62,7 +64,14 @@
 - `var关键字`可应用于`lambda表达式`
 - [HttpClient API](https://juejin.im/post/6844903685563088903#heading-8)
 - `ZGC`毫秒级暂停`GC`
+
 ### JDK12
+
+- [介绍](https://developer.ibm.com/zh/articles/the-new-features-of-java-12/)
+- `Shenandoah，它是作为一中低停顿时间的垃圾收集器` 
+- `Java Microbenchmark Harness`性能测试套件
+- `Switch表达式`
+- 改进`G1`
 
 ### JDK13
 
