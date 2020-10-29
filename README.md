@@ -7,7 +7,7 @@
 
 ### 提示
 
-- Gradle执行乱码问题`vmoptions`文件加上`-Dfile.encoding=utf-8`
+- IDEA`Gradle`执行乱码问题`vmoptions`文件加上`-Dfile.encoding=utf-8`
 
 ### JDK9
 
