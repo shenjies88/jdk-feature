@@ -63,18 +63,24 @@
 
 - `var关键字`可应用于`lambda表达式`
 - [HttpClient API](https://juejin.im/post/6844903685563088903#heading-8)
-- `ZGC`毫秒级暂停`GC`
 
 ### JDK12
 
 - [介绍](https://developer.ibm.com/zh/articles/the-new-features-of-java-12/)
 - `Shenandoah，它是作为一中低停顿时间的垃圾收集器` 
 - `Java Microbenchmark Harness`性能测试套件
-- `Switch表达式`
 - 改进`G1`
 
 ### JDK13
 
+- `Socket API`重构
+
 ### JDK14
 
+- 美化`NullPointerException`信息打印
+- `Switch 表达式`正式版
+- 删除`CMS 垃圾回收器`
+
 ### JDK15
+
+- `ZGC`毫秒级暂停`GC`
